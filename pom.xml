@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>paragraph.analyzer</artifactId>
+	<artifactId>paragraphanalyzer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>paragraph.analyzer</name>
+	<name>paragraphanalyzer</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -84,7 +84,7 @@
       </execution>
     </executions>
     <configuration>
-      <repository>${docker.image.prefix}/${project.artifactId}</repository>
+      <repository>${project.artifactId}</repository>
       <buildArgs>
         <JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
       </buildArgs>
